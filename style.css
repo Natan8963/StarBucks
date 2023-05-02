@@ -1,0 +1,200 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.center{
+    margin:0 auto;
+    max-width: 1280px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 2%;
+}
+
+html, body{
+    height: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+header{
+    margin-top: 25px;
+    height: 200px;
+    padding: 20px 0;
+}
+
+.logo{
+    width: 40%;
+    margin-left: 116px;
+}
+
+.menu{
+    width: 39%;
+    text-align: right;
+}
+
+.menu a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 15px;
+    
+}
+
+section.sobre{
+    height: calc(100% - 200px);
+    position: relative;
+}
+
+.extras{
+    width: 800px;
+    height: 900px;
+    position:absolute;
+    bottom: -420px;
+    right:-28%;
+    border-radius: 50%;
+    background-color: #017143;
+}
+
+section img[src="assets/img1.webp"]{
+    position: absolute;
+    top: -9%;
+    right: 57%;
+    width: 40%;
+}
+
+.social-media{
+    right: 430px;
+    position: absolute;
+    top: 17%;
+}
+
+.social-media img{
+    margin: 20px 0;
+    width: 20px;
+    display: block;
+}
+
+.social-media :first-child img{
+    width: 15px;
+}
+
+.texto-sobre{
+    margin:70px;
+    margin-top: 45px;
+    width: 50%;
+}
+
+.texto-sobre h1{
+    font-size: 50px;
+}
+
+.texto-sobre span{
+    color: #017143;
+}
+
+.texto-sobre p{
+    margin: 30px 0;
+    max-width: 600px;
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+
+}
+
+.texto-sobre button{
+    width: 120px;
+    height: 33px;
+    border:0;
+    border-radius: 16px;
+    cursor: pointer;
+    color: white;
+    background-color: #017143;
+
+}
+
+@media screen and (max-width: 1100px){
+    
+    body{
+        overflow: auto;
+        overflow-x: hidden;
+        background: linear-gradient(#017143, #338b66);
+    }
+    
+    .extras{
+        position:absolute;
+        bottom: 0px;
+        right: -300px;
+        width: 800px;
+        height: auto;
+        border-radius: 0;
+        background-color: rebeccapurple;
+    }
+
+    section img[src="assets/img1.webp"]{
+        width: 40%;
+        position: absolute;
+        top: -550px;
+        right: 220px;
+        transform: rotate(-9deg);
+    }
+
+    .social-media{
+        position: absolute;
+        right: 42%;
+        top: -80px;
+    }
+}
+
+@media screen and (max-width: 720px){
+    
+    .center{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo{
+       margin: 0 auto;
+       text-align: center;
+    }
+
+    .menu{
+        margin: 25px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    section .center{
+        text-align: justify;
+    }
+
+    .texto-sobre{
+        margin: auto;
+        margin-top: 45px;
+        width: 100%;
+        padding: 0 4.5%;
+    }
+
+    .texto-sobre h1{
+        text-align: center;
+        font-size: 22px;  
+    }
+    
+    .texto-sobre span{
+        color: #0b412a;
+    }
+    
+    .texto-sobre p{       
+        max-width: 900;
+    }
+
+    .texto-sobre button{
+        border: 1px solid #0b412a;
+    }
+
+    .extras{
+        visibility: hidden;
+    }
+}
